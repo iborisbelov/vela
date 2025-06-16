@@ -9,7 +9,7 @@ const SignUp: React.FC = () => {
       className="relative min-h-screen flex flex-col bg-vela-deep-space overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fb80a04890b9742d5aba8e99736911cbf)",
+          "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fe2b1054892dc42b29c13bce357ce3603)",
       }}
     >
       {/* Content container */}
@@ -120,7 +120,10 @@ const SignUp: React.FC = () => {
               </button>
 
               {/* Email button */}
-              <button className="flex h-10 min-w-[84px] max-w-[480px] px-4 justify-center items-center self-stretch rounded-[20px] text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-vela-starlight-white hover:bg-opacity-10">
+              <button
+                onClick={() => navigate("/create-account")}
+                className="flex h-10 min-w-[84px] max-w-[480px] px-4 justify-center items-center self-stretch rounded-[20px] text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-vela-starlight-white hover:bg-opacity-10"
+              >
                 <div className="flex flex-col items-center">
                   <div className="truncate self-stretch text-center">
                     Continue with Email
