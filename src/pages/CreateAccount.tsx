@@ -23,6 +23,9 @@ const CreateAccount: React.FC = () => {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted:", formData);
+
+    // Navigate to trial works page on successful registration
+    navigate("/how-trial-works");
   };
 
   return (
