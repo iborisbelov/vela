@@ -6,7 +6,13 @@ const Welcome: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-between items-center py-5 px-0 bg-vela-deep-space overflow-hidden">
+    <div
+      className="relative min-h-screen flex flex-col justify-between items-center py-5 px-0 bg-vela-deep-space overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage:
+          "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fb80a04890b9742d5aba8e99736911cbf)",
+      }}
+    >
       {/* Content container */}
       <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col justify-between items-center min-h-screen py-5">
         {/* Logo/Brand */}
