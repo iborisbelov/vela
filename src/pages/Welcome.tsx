@@ -17,7 +17,7 @@ const Welcome: React.FC = () => {
       <div className="relative z-10 w-full flex justify-center pt-8">
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2"
+          src="https://cdn.builder.io/api/v1/assets/b3f92eb613934d858f85eaa13a3f8306/img-3e3fc0?format=webp&width=800"
           alt="Vela hero constellation"
           className="w-auto h-auto max-w-[300px] max-h-[200px] object-contain"
         />
