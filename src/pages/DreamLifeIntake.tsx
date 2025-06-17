@@ -103,8 +103,8 @@ const DreamLifeIntake: React.FC = () => {
           </div>
 
           {/* Age question */}
-          <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm flex flex-col items-start gap-4">
-            <div>
+          <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
+            <div className="pb-2">
               <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 How old are you?
               </p>
@@ -114,9 +114,13 @@ const DreamLifeIntake: React.FC = () => {
                 <button
                   key={age}
                   onClick={() => setSelectedAge(age)}
-                  className={`h-9 px-5 flex justify-center items-center rounded-[20px] bg-vela-constellation-50/53 backdrop-blur-sm transition-all hover:bg-vela-constellation-50/70 ${
+                  className={`h-9 px-5 flex justify-center items-center rounded-[20px] transition-all hover:opacity-80 ${
                     selectedAge === age ? "ring-2 ring-vela-dream-blue" : ""
                   }`}
+                  style={{
+                    background: "rgba(164, 199, 234, 0.53)",
+                    backdropFilter: "blur(5px)",
+                  }}
                 >
                   <span className="text-vela-dream-blue font-satoshi text-terms font-bold leading-6">
                     {age}
@@ -127,8 +131,8 @@ const DreamLifeIntake: React.FC = () => {
           </div>
 
           {/* Gender question */}
-          <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm flex flex-col items-start gap-4">
-            <div>
+          <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
+            <div className="pb-2">
               <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 Gender?
               </p>
@@ -138,13 +142,17 @@ const DreamLifeIntake: React.FC = () => {
                 <button
                   key={gender}
                   onClick={() => setSelectedGender(gender)}
-                  className={`h-9 px-5 flex justify-center items-center rounded-[20px] bg-vela-constellation-50/53 backdrop-blur-sm transition-all hover:bg-vela-constellation-50/70 ${
+                  className={`h-9 px-5 flex justify-center items-center rounded-[20px] transition-all hover:opacity-80 ${
                     gender === "Non-binary/Other" ? "flex-1" : ""
                   } ${
                     selectedGender === gender
                       ? "ring-2 ring-vela-dream-blue"
                       : ""
                   }`}
+                  style={{
+                    background: "rgba(164, 199, 234, 0.53)",
+                    backdropFilter: "blur(5px)",
+                  }}
                 >
                   <span className="text-vela-dream-blue font-satoshi text-terms font-bold leading-6">
                     {gender}
@@ -155,8 +163,8 @@ const DreamLifeIntake: React.FC = () => {
           </div>
 
           {/* Goals question */}
-          <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm flex flex-col items-start gap-4">
-            <div>
+          <div className="w-full max-w-[358px] flex flex-col items-start gap-2.5">
+            <div className="pb-2">
               <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 Are there specific goals you want to accomplish, experiences you
                 want to have, or habits you want to form or change?
@@ -167,7 +175,11 @@ const DreamLifeIntake: React.FC = () => {
                 value={goals}
                 onChange={(e) => setGoals(e.target.value)}
                 placeholder="Describe your text..."
-                className="w-full h-[140px] p-5 rounded-[10px] bg-vela-constellation-50/53 backdrop-blur-sm border-none outline-none resize-none text-vela-starlight-white font-satoshi text-terms leading-6 placeholder:text-vela-dream-blue"
+                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-satoshi text-terms leading-6 placeholder:text-vela-dream-blue"
+                style={{
+                  background: "rgba(164, 199, 234, 0.53)",
+                  backdropFilter: "blur(5px)",
+                }}
               />
             </div>
           </div>
