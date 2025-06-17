@@ -9,8 +9,7 @@ const Welcome: React.FC = () => {
     <div
       className="relative min-h-screen flex flex-col justify-between items-center py-5 px-0 bg-vela-deep-space overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage:
-          "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fb80a04890b9742d5aba8e99736911cbf)",
+        backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fb80a04890b9742d5aba8e99736911cbf)"
       }}
     >
       {/* Content container */}
@@ -27,8 +26,7 @@ const Welcome: React.FC = () => {
         <div
           className="w-full max-w-[314px] h-[292px] flex-shrink-0 rounded-lg mb-8 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2F37ab520a469a459bae058a74cc3589da)",
+            backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2F37ab520a469a459bae058a74cc3589da)"
           }}
         />
 
@@ -72,15 +70,15 @@ const Welcome: React.FC = () => {
             {/* Sign In Text */}
             <div className="text-center font-body text-subtitle">
               <span className="text-vela-constellation-50">
-                Already have an account?
+                Already have an account?{" "}
               </span>
-              <span className="text-vela-starlight-white"> Sign In</span>
+              <span className="text-vela-starlight-white underline">
+                Sign in
+              </span>
             </div>
-          </div>
 
           {/* Terms Text */}
           <div className="w-full max-w-[358px] text-center font-body text-terms leading-[21px] pt-2">
-            <span className="text-vela-darker-variant">
               By continuing, you agree to our{" "}
             </span>
             <span className="text-vela-starlight-white">Terms of Service</span>
