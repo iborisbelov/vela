@@ -31,7 +31,7 @@ const Welcome: React.FC = () => {
         />
 
         {/* Content Section */}
-        <div className="flex-1 flex flex-col justify-end items-center text-center px-4 space-y-6">
+        <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col items-center justify-center min-h-screen px-4 space-y-6">
           {/* Subtitle */}
           <div className="w-full text-vela-starlight-white text-center font-body text-subtitle font-normal italic">
             "Navigate from Within"
@@ -48,24 +48,17 @@ const Welcome: React.FC = () => {
               the only meditation app built specifically for you. Personalized
               meditations built from your joy, identity, and dreams.
             </div>
-            <div>Guided by AI, grounded in neuroscience.</div>
-            <div className="font-bold">
-              Set sail to manifest your dream life, with Vela.
-            </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="w-full flex flex-col items-center space-y-3 pt-4">
-            {/* Get Started Button */}
-            <div className="w-full px-4">
-              <VelaButton
-                onClick={() => navigate("/sign-up")}
-                className="w-full"
-                size="lg"
-              >
-                Get Started
-              </VelaButton>
-            </div>
+          {/* Get Started Button */}
+          <div className="w-full">
+            <VelaButton
+              size="lg"
+              onClick={() => navigate("/sign-up")}
+              className="w-full"
+            >
+              Get Started
+            </VelaButton>
 
             {/* Sign In Text */}
             <div className="text-center font-body text-subtitle">
@@ -76,11 +69,18 @@ const Welcome: React.FC = () => {
                 Sign in
               </span>
             </div>
+          </div>
 
           {/* Terms Text */}
           <div className="w-full max-w-[358px] text-center font-body text-terms leading-[21px] pt-2">
+            <span className="text-vela-darker-variant">
               By continuing, you agree to our{" "}
             </span>
+            <span className="text-vela-starlight-white">Terms of Service</span>
+            <span className="text-vela-darker-variant"> and </span>
+            <span className="text-vela-starlight-white">Privacy Policy.</span>
+          </div>
+        </div>
             <span className="text-vela-starlight-white">Terms of Service</span>
             <span className="text-vela-darker-variant"> and </span>
             <span className="text-vela-starlight-white">Privacy Policy.</span>
