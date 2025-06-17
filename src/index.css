@@ -1,32 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/satoshi");
-
-@font-face {
-  font-family: "Canela Light";
-  src:
-    url("/fonts/Canela-Light.woff2") format("woff2"),
-    url("/fonts/Canela-Light.woff") format("woff"),
-    url("/fonts/Canela-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Canela Trial";
-  src: url("https://db.onlinewebfonts.com/t/cec8bcc2981332dc1c08206d287c0efe.eot");
-  src:
-    url("https://db.onlinewebfonts.com/t/cec8bcc2981332dc1c08206d287c0efe.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/cec8bcc2981332dc1c08206d287c0efe.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/cec8bcc2981332dc1c08206d287c0efe.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/cec8bcc2981332dc1c08206d287c0efe.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/cec8bcc2981332dc1c08206d287c0efe.svg#Canela Text Trial")
-      format("svg");
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital,wght@0,400;1,400&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;

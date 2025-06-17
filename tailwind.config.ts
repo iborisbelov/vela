@@ -77,9 +77,9 @@ export default {
         },
       },
       fontFamily: {
-        canela: ["Canela Light", "Canela Trial", "serif"],
-        satoshi: [
-          "Satoshi",
+        heading: ["Sorts Mill Goudy", "serif"],
+        body: [
+          "Be Vietnam Pro",
           "-apple-system",
           "BlinkMacSystemFont",
           "Roboto",
