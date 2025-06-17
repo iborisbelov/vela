@@ -38,8 +38,15 @@ const SleepStreamMeditation: React.FC = () => {
   };
 
   const handlePlayPause = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
     setIsPlaying(!isPlaying);
-    // Here you would integrate with actual audio playback
   };
 
   const handleSaveAndContinue = () => {
@@ -58,21 +65,33 @@ const SleepStreamMeditation: React.FC = () => {
   };
 
   useEffect(() => {
-    // Simulate audio time progress
-    let interval: NodeJS.Timeout;
-    if (isPlaying) {
-      interval = setInterval(() => {
-        setCurrentTime((prev) => {
-          if (prev >= duration) {
-            setIsPlaying(false);
-            return duration;
-          }
-          return prev + 1;
-        });
-      }, 1000);
-    }
-    return () => clearInterval(interval);
-  }, [isPlaying, duration]);
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const updateTime = () => {
+      setCurrentTime(Math.floor(audio.currentTime));
+    };
+
+    const handleEnded = () => {
+      setIsPlaying(false);
+      setCurrentTime(0);
+    };
+
+    const handleLoadedMetadata = () => {
+      // Duration will be set from actual audio file
+      console.log("Audio duration:", audio.duration);
+    };
+
+    audio.addEventListener("timeupdate", updateTime);
+    audio.addEventListener("ended", handleEnded);
+    audio.addEventListener("loadedmetadata", handleLoadedMetadata);
+
+    return () => {
+      audio.removeEventListener("timeupdate", updateTime);
+      audio.removeEventListener("ended", handleEnded);
+      audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+    };
+  }, []);
 
   return (
     <div
@@ -270,8 +289,12 @@ const SleepStreamMeditation: React.FC = () => {
         </div>
       </div>
 
-      {/* Hidden audio element for future integration */}
-      <audio ref={audioRef} />
+      {/* Audio element with MP3 source */}
+      <audio
+        ref={audioRef}
+        src="https://s89.mp3cut.net/acutter/d/s89aHNHIF83x0oP_mp3_apcK2w5E.mp3"
+        preload="metadata"
+      />
     </div>
   );
 };
