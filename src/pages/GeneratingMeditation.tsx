@@ -28,7 +28,10 @@ const GeneratingMeditation: React.FC = () => {
         {/* Spiral/vortex animation container */}
         <div className="relative w-full h-full flex items-center justify-center">
           {/* Multiple rotating rings for vortex effect */}
-          <div className="absolute w-96 h-96 animate-spin duration-[20s] opacity-30">
+          <div
+            className="absolute w-96 h-96 animate-spin opacity-30"
+            style={{ animationDuration: "20s" }}
+          >
             <div className="w-full h-full rounded-full border border-white/10" />
           </div>
           <div
@@ -37,7 +40,10 @@ const GeneratingMeditation: React.FC = () => {
           >
             <div className="w-full h-full rounded-full border border-white/15" />
           </div>
-          <div className="absolute w-64 h-64 animate-spin duration-[10s] opacity-50">
+          <div
+            className="absolute w-64 h-64 animate-spin opacity-50"
+            style={{ animationDuration: "10s" }}
+          >
             <div className="w-full h-full rounded-full border border-white/20" />
           </div>
           <div
@@ -46,7 +52,10 @@ const GeneratingMeditation: React.FC = () => {
           >
             <div className="w-full h-full rounded-full border border-white/25" />
           </div>
-          <div className="absolute w-32 h-32 animate-spin duration-[6s] opacity-70">
+          <div
+            className="absolute w-32 h-32 animate-spin opacity-70"
+            style={{ animationDuration: "6s" }}
+          >
             <div className="w-full h-full rounded-full border border-white/30" />
           </div>
 
