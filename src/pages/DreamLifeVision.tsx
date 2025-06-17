@@ -87,7 +87,7 @@ const DreamLifeVision: React.FC = () => {
             <h1 className="text-vela-starlight-white text-center font-heading text-title-hero font-light">
               Dream Life Vision
             </h1>
-            <div className="text-vela-starlight-white text-center font-satoshi text-terms font-bold tracking-wider">
+            <div className="text-vela-starlight-white text-center font-body text-terms font-bold tracking-wider">
               THE VISION BUILDER
             </div>
           </div>
@@ -95,7 +95,7 @@ const DreamLifeVision: React.FC = () => {
           {/* First question - Dream life */}
           <div className="w-full max-w-[358px] flex flex-col items-start gap-2.5">
             <div className="pb-2">
-              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
+              <p className="text-vela-starlight-white font-body text-subtitle leading-5">
                 <span className="font-bold">
                   Tell me about your dream life.
                 </span>
@@ -112,7 +112,7 @@ const DreamLifeVision: React.FC = () => {
                 value={dreamLife}
                 onChange={(e) => setDreamLife(e.target.value)}
                 placeholder="Close your eyes and describe the life you envision..."
-                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-satoshi text-terms leading-6 placeholder:text-vela-dream-blue"
+                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-body text-terms leading-6 placeholder:text-vela-dream-blue"
                 style={{
                   background: "rgba(164, 199, 234, 0.53)",
                   backdropFilter: "blur(5px)",
@@ -124,7 +124,7 @@ const DreamLifeVision: React.FC = () => {
           {/* Second question - Happiness */}
           <div className="w-full max-w-[358px] flex flex-col items-start gap-2.5">
             <div className="pb-2">
-              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
+              <p className="text-vela-starlight-white font-body text-subtitle leading-5">
                 <span className="font-bold">What makes you happy?</span>
                 <span className="font-normal">
                   {" "}
@@ -137,7 +137,7 @@ const DreamLifeVision: React.FC = () => {
                 value={happiness}
                 onChange={(e) => setHappiness(e.target.value)}
                 placeholder="When do you feel most authentic and alive?"
-                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-satoshi text-terms leading-6 placeholder:text-vela-dream-blue"
+                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-body text-terms leading-6 placeholder:text-vela-dream-blue"
                 style={{
                   background: "rgba(164, 199, 234, 0.53)",
                   backdropFilter: "blur(5px)",
@@ -153,7 +153,7 @@ const DreamLifeVision: React.FC = () => {
             {/* Back button */}
             <button
               onClick={handleBack}
-              className="flex h-12 flex-1 px-5 justify-center items-center rounded-vela border-2 border-vela-darker-variant text-vela-darker-variant font-satoshi font-bold text-subtitle transition-all hover:bg-vela-darker-variant hover:text-vela-starlight-white relative"
+              className="flex h-12 flex-1 px-5 justify-center items-center rounded-vela border-2 border-vela-darker-variant text-vela-darker-variant font-body font-bold text-subtitle transition-all hover:bg-vela-darker-variant hover:text-vela-starlight-white relative"
             >
               <svg
                 className="w-6 h-6 absolute left-5 fill-current"
@@ -174,7 +174,7 @@ const DreamLifeVision: React.FC = () => {
             <button
               onClick={handleNext}
               disabled={!isFormValid}
-              className={`flex h-12 flex-1 px-5 justify-center items-center rounded-vela font-satoshi font-bold text-subtitle transition-all relative ${
+              className={`flex h-12 flex-1 px-5 justify-center items-center rounded-vela font-body font-bold text-subtitle transition-all relative ${
                 isFormValid
                   ? "bg-vela-darker-variant text-vela-starlight-white hover:bg-opacity-90"
                   : "bg-vela-darker-variant/30 text-vela-starlight-white/50 cursor-not-allowed"

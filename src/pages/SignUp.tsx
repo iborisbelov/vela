@@ -50,7 +50,7 @@ const SignUp: React.FC = () => {
           </div>
 
           {/* Subtitle section */}
-          <div className="self-stretch text-vela-starlight-white text-center font-satoshi text-subtitle font-normal px-4 pt-1 pb-3">
+          <div className="self-stretch text-vela-starlight-white text-center font-body text-subtitle font-normal px-4 pt-1 pb-3">
             If you already have an account, we'll log you in.
           </div>
 
@@ -58,7 +58,7 @@ const SignUp: React.FC = () => {
           <div className="flex justify-center items-start self-stretch">
             <div className="flex max-w-[480px] px-4 py-3 flex-col items-start gap-3 flex-1">
               {/* Apple button */}
-              <button className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90 relative">
+              <button className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-body font-bold text-subtitle transition-all hover:bg-opacity-90 relative">
                 <div className="flex flex-col items-center">
                   <div className="truncate self-stretch text-center">
                     Continue with Apple
@@ -79,7 +79,7 @@ const SignUp: React.FC = () => {
               </button>
 
               {/* Google button */}
-              <button className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90 relative">
+              <button className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-body font-bold text-subtitle transition-all hover:bg-opacity-90 relative">
                 <div className="flex flex-col items-center">
                   <div className="truncate self-stretch text-center">
                     Continue with Google
@@ -112,7 +112,7 @@ const SignUp: React.FC = () => {
               </button>
 
               {/* Facebook button */}
-              <button className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90 relative">
+              <button className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-body font-bold text-subtitle transition-all hover:bg-opacity-90 relative">
                 <div className="flex flex-col items-center">
                   <div className="truncate self-stretch text-center">
                     Continue with Facebook
@@ -142,7 +142,7 @@ const SignUp: React.FC = () => {
               {/* Email button */}
               <button
                 onClick={() => navigate("/create-account")}
-                className="flex h-10 min-w-[84px] max-w-[480px] px-4 justify-center items-center self-stretch rounded-[20px] text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-vela-starlight-white hover:bg-opacity-10"
+                className="flex h-10 min-w-[84px] max-w-[480px] px-4 justify-center items-center self-stretch rounded-[20px] text-vela-starlight-white font-body font-bold text-subtitle transition-all hover:bg-vela-starlight-white hover:bg-opacity-10"
               >
                 <div className="flex flex-col items-center">
                   <div className="truncate self-stretch text-center">
@@ -155,7 +155,7 @@ const SignUp: React.FC = () => {
         </div>
 
         {/* Terms and conditions */}
-        <div className="w-auto max-w-[358px] mx-auto px-4 text-center font-satoshi text-terms leading-[21px]">
+        <div className="w-auto max-w-[358px] mx-auto px-4 text-center font-body text-terms leading-[21px]">
           <span className="text-vela-darker-variant">
             By continuing, you agree to our{" "}
           </span>

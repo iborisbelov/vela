@@ -83,7 +83,7 @@ const CreateAccount: React.FC = () => {
             <div className="flex max-w-[480px] px-4 py-3 items-end content-end gap-4 self-stretch flex-wrap">
               <div className="flex min-w-[160px] flex-col items-start flex-1">
                 <div className="flex pb-2 flex-col items-start self-stretch">
-                  <label className="self-stretch text-vela-starlight-white font-satoshi text-subtitle font-normal">
+                  <label className="self-stretch text-vela-starlight-white font-body text-subtitle font-normal">
                     First name
                   </label>
                 </div>
@@ -92,7 +92,7 @@ const CreateAccount: React.FC = () => {
                   name="firstName"
                   value={formData.firstName}
                   onChange={handleInputChange}
-                  className="flex h-12 px-4 items-center self-stretch rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-satoshi placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
+                  className="flex h-12 px-4 items-center self-stretch rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-body placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
                   placeholder=""
                 />
               </div>
@@ -102,7 +102,7 @@ const CreateAccount: React.FC = () => {
             <div className="flex max-w-[480px] px-4 py-3 items-end content-end gap-4 self-stretch flex-wrap">
               <div className="flex min-w-[160px] flex-col items-start flex-1">
                 <div className="flex pb-2 flex-col items-start self-stretch">
-                  <label className="self-stretch text-vela-starlight-white font-satoshi text-subtitle font-normal">
+                  <label className="self-stretch text-vela-starlight-white font-body text-subtitle font-normal">
                     Last name
                   </label>
                 </div>
@@ -111,7 +111,7 @@ const CreateAccount: React.FC = () => {
                   name="lastName"
                   value={formData.lastName}
                   onChange={handleInputChange}
-                  className="flex h-12 px-4 items-center self-stretch rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-satoshi placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
+                  className="flex h-12 px-4 items-center self-stretch rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-body placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
                   placeholder=""
                 />
               </div>
@@ -121,7 +121,7 @@ const CreateAccount: React.FC = () => {
             <div className="flex max-w-[480px] px-4 py-3 items-end content-end gap-4 self-stretch flex-wrap">
               <div className="flex min-w-[160px] flex-col items-start flex-1">
                 <div className="flex pb-2 flex-col items-start self-stretch">
-                  <label className="self-stretch text-vela-starlight-white font-satoshi text-subtitle font-normal">
+                  <label className="self-stretch text-vela-starlight-white font-body text-subtitle font-normal">
                     Email address
                   </label>
                 </div>
@@ -130,7 +130,7 @@ const CreateAccount: React.FC = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
-                  className="flex h-12 px-4 items-center self-stretch rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-satoshi placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
+                  className="flex h-12 px-4 items-center self-stretch rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-body placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
                   placeholder=""
                 />
               </div>
@@ -140,7 +140,7 @@ const CreateAccount: React.FC = () => {
             <div className="flex max-w-[480px] px-4 py-3 items-end content-end gap-4 self-stretch flex-wrap">
               <div className="flex min-w-[160px] flex-col items-start flex-1">
                 <div className="flex pb-2 flex-col items-start self-stretch">
-                  <label className="self-stretch text-vela-starlight-white font-satoshi text-subtitle font-normal">
+                  <label className="self-stretch text-vela-starlight-white font-body text-subtitle font-normal">
                     Password (8+ Characters)
                   </label>
                 </div>
@@ -150,7 +150,7 @@ const CreateAccount: React.FC = () => {
                     name="password"
                     value={formData.password}
                     onChange={handleInputChange}
-                    className="flex h-14 px-4 pr-12 items-center flex-1 rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-satoshi placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
+                    className="flex h-14 px-4 pr-12 items-center flex-1 rounded-xl border border-[#3D4554] bg-vela-dream-blue/10 backdrop-blur-sm text-vela-starlight-white font-body placeholder:text-vela-starlight-white/60 focus:outline-none focus:ring-2 focus:ring-vela-dream-blue/50"
                     placeholder=""
                   />
                   <button
@@ -182,7 +182,7 @@ const CreateAccount: React.FC = () => {
               <div className="flex px-4 py-3 items-start self-stretch">
                 <button
                   type="submit"
-                  className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center flex-1 rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90"
+                  className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center flex-1 rounded-vela bg-vela-darker-variant text-vela-starlight-white font-body font-bold text-subtitle transition-all hover:bg-opacity-90"
                 >
                   <div className="flex flex-col items-center">
                     <div className="truncate self-stretch text-center">
@@ -198,7 +198,7 @@ const CreateAccount: React.FC = () => {
         {/* Bottom section */}
         <div className="flex flex-col items-center pb-5">
           {/* Terms and conditions */}
-          <div className="w-auto max-w-[358px] mx-auto px-4 text-center font-satoshi text-terms leading-[21px]">
+          <div className="w-auto max-w-[358px] mx-auto px-4 text-center font-body text-terms leading-[21px]">
             <span className="text-vela-darker-variant">
               By continuing, you agree to our{" "}
             </span>

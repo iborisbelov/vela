@@ -172,13 +172,13 @@ const SleepStreamMeditation: React.FC = () => {
           </div>
 
           {/* Description */}
-          <p className="text-vela-starlight-white text-center font-satoshi text-subtitle leading-5 max-w-[340px]">
+          <p className="text-vela-starlight-white text-center font-body text-subtitle leading-5 max-w-[340px]">
             A deeply personalized journey crafted from your unique vision and
             dreams
           </p>
 
           {/* Detailed Description */}
-          <p className="text-vela-starlight-white text-center font-satoshi text-subtitle font-bold leading-5 max-w-[340px]">
+          <p className="text-vela-starlight-white text-center font-body text-subtitle font-bold leading-5 max-w-[340px]">
             This 5 min meditation weaves together your personal aspirations,
             gratitude, and authentic self with dreamy guidance to help manifest
             your dream life.
@@ -262,7 +262,7 @@ const SleepStreamMeditation: React.FC = () => {
           {/* Save and Continue button */}
           <button
             onClick={handleSaveAndContinue}
-            className="flex h-12 w-full px-5 justify-center items-center rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90 relative"
+            className="flex h-12 w-full px-5 justify-center items-center rounded-vela bg-vela-darker-variant text-vela-starlight-white font-body font-bold text-subtitle transition-all hover:bg-opacity-90 relative"
           >
             <span>Save and Continue to Dream Vault</span>
             <svg
@@ -282,7 +282,7 @@ const SleepStreamMeditation: React.FC = () => {
           {/* Reset button */}
           <button
             onClick={handleReset}
-            className="flex h-12 w-full px-5 justify-center items-center rounded-vela border-2 border-vela-darker-variant text-vela-darker-variant font-satoshi font-bold text-subtitle transition-all hover:bg-vela-darker-variant hover:text-vela-starlight-white"
+            className="flex h-12 w-full px-5 justify-center items-center rounded-vela border-2 border-vela-darker-variant text-vela-darker-variant font-body font-bold text-subtitle transition-all hover:bg-vela-darker-variant hover:text-vela-starlight-white"
           >
             Reset
           </button>

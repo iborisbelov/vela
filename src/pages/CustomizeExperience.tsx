@@ -113,7 +113,7 @@ const CustomizeExperience: React.FC = () => {
             <h1 className="text-vela-starlight-white text-center font-heading text-title-hero font-light">
               Customize Your Experience
             </h1>
-            <p className="text-vela-starlight-white text-center font-satoshi text-subtitle leading-5">
+            <p className="text-vela-starlight-white text-center font-body text-subtitle leading-5">
               Select the perfect meditation experience for this moment
             </p>
           </div>
@@ -122,7 +122,7 @@ const CustomizeExperience: React.FC = () => {
           <div className="w-full max-w-[358px] flex flex-col gap-6">
             {/* Tone selection */}
             <div className="flex flex-col gap-2">
-              <label className="text-vela-starlight-white font-satoshi text-subtitle leading-6">
+              <label className="text-vela-starlight-white font-body text-subtitle leading-6">
                 Tone
               </label>
               <div className="relative">
@@ -131,7 +131,7 @@ const CustomizeExperience: React.FC = () => {
                     setShowToneDropdown(!showToneDropdown);
                     setShowVoiceDropdown(false);
                   }}
-                  className="w-full h-12 px-5 flex items-center justify-between rounded-[10px] text-left font-satoshi text-terms leading-6"
+                  className="w-full h-12 px-5 flex items-center justify-between rounded-[10px] text-left font-body text-terms leading-6"
                   style={{
                     background: "rgba(164, 199, 234, 0.53)",
                     backdropFilter: "blur(5px)",
@@ -170,7 +170,7 @@ const CustomizeExperience: React.FC = () => {
                           setSelectedTone(tone);
                           setShowToneDropdown(false);
                         }}
-                        className="w-full px-5 py-3 text-left hover:bg-white/10 transition-all text-vela-starlight-white font-satoshi text-terms"
+                        className="w-full px-5 py-3 text-left hover:bg-white/10 transition-all text-vela-starlight-white font-body text-terms"
                       >
                         {tone}
                       </button>
@@ -182,7 +182,7 @@ const CustomizeExperience: React.FC = () => {
 
             {/* Voice selection */}
             <div className="flex flex-col gap-2">
-              <label className="text-vela-starlight-white font-satoshi text-subtitle leading-6">
+              <label className="text-vela-starlight-white font-body text-subtitle leading-6">
                 Voice
               </label>
               <div className="relative">
@@ -191,7 +191,7 @@ const CustomizeExperience: React.FC = () => {
                     setShowVoiceDropdown(!showVoiceDropdown);
                     setShowToneDropdown(false);
                   }}
-                  className="w-full h-12 px-5 flex items-center justify-between rounded-[10px] text-left font-satoshi text-terms leading-6"
+                  className="w-full h-12 px-5 flex items-center justify-between rounded-[10px] text-left font-body text-terms leading-6"
                   style={{
                     background: "rgba(164, 199, 234, 0.53)",
                     backdropFilter: "blur(5px)",
@@ -230,7 +230,7 @@ const CustomizeExperience: React.FC = () => {
                           setSelectedVoice(voice);
                           setShowVoiceDropdown(false);
                         }}
-                        className="w-full px-5 py-3 text-left hover:bg-white/10 transition-all text-vela-starlight-white font-satoshi text-terms"
+                        className="w-full px-5 py-3 text-left hover:bg-white/10 transition-all text-vela-starlight-white font-body text-terms"
                       >
                         {voice}
                       </button>
@@ -242,7 +242,7 @@ const CustomizeExperience: React.FC = () => {
 
             {/* Duration selection */}
             <div className="flex flex-col gap-2">
-              <label className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
+              <label className="text-vela-starlight-white font-body text-subtitle leading-5">
                 Duration
               </label>
               <div className="flex items-start gap-2.5 w-full">
@@ -260,7 +260,7 @@ const CustomizeExperience: React.FC = () => {
                       backdropFilter: "blur(5px)",
                     }}
                   >
-                    <span className="text-vela-dream-blue font-satoshi text-terms font-bold leading-6">
+                    <span className="text-vela-dream-blue font-body text-terms font-bold leading-6">
                       {duration}
                     </span>
                   </button>
@@ -276,7 +276,7 @@ const CustomizeExperience: React.FC = () => {
             <button
               onClick={handleGenerate}
               disabled={!isFormValid}
-              className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-satoshi font-bold text-subtitle transition-all relative ${
+              className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-body font-bold text-subtitle transition-all relative ${
                 isFormValid
                   ? "bg-vela-darker-variant text-vela-starlight-white hover:bg-opacity-90"
                   : "bg-vela-darker-variant/30 text-vela-starlight-white/50 cursor-not-allowed"

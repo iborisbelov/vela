@@ -89,7 +89,7 @@ const GeneratingMeditation: React.FC = () => {
       <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col justify-center items-center min-h-screen px-4">
         {/* Loading text */}
         <div className="text-center">
-          <p className="text-vela-starlight-white font-satoshi text-subtitle font-bold leading-5 max-w-[278px] animate-pulse">
+          <p className="text-vela-starlight-white font-body text-subtitle font-bold leading-5 max-w-[278px] animate-pulse">
             We're shaping your vision into a meditative journey…
           </p>
         </div>

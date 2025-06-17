@@ -59,7 +59,7 @@ const HowTrialWorks: React.FC = () => {
 
           {/* Subtitle and toggle section */}
           <div className="flex flex-col items-center gap-5 self-stretch px-4 pt-1 pb-3">
-            <div className="self-stretch text-vela-starlight-white text-center font-satoshi text-subtitle">
+            <div className="self-stretch text-vela-starlight-white text-center font-body text-subtitle">
               <span className="font-bold">First 4 days free</span>
               <span className="font-normal">, then $79/year ($6.58/month)</span>
             </div>
@@ -76,7 +76,7 @@ const HowTrialWorks: React.FC = () => {
                       : "bg-transparent text-vela-starlight-white"
                   }`}
                 >
-                  <div className="font-satoshi font-bold text-subtitle">
+                  <div className="font-body font-bold text-subtitle">
                     Annual
                   </div>
                 </button>
@@ -95,7 +95,7 @@ const HowTrialWorks: React.FC = () => {
                     paddingRight: "20px",
                   }}
                 >
-                  <div className="font-satoshi font-bold text-subtitle">
+                  <div className="font-body font-bold text-subtitle">
                     Monthly
                   </div>
                 </button>
@@ -111,10 +111,10 @@ const HowTrialWorks: React.FC = () => {
               <div className="flex flex-col items-start relative z-10">
                 {/* Dot */}
                 <div className="absolute -left-[34px] top-1 w-2.5 h-2.5 rounded-full bg-vela-dream-blue"></div>
-                <div className="text-vela-starlight-white font-satoshi font-bold text-subtitle">
+                <div className="text-vela-starlight-white font-body font-bold text-subtitle">
                   Share your goals
                 </div>
-                <div className="text-vela-starlight-white font-satoshi text-subtitle leading-5 max-w-[246px]">
+                <div className="text-vela-starlight-white font-body text-subtitle leading-5 max-w-[246px]">
                   We've set up your profile based on your answers.
                 </div>
               </div>
@@ -123,10 +123,10 @@ const HowTrialWorks: React.FC = () => {
               <div className="flex flex-col items-start relative z-10 mt-4">
                 {/* Dot */}
                 <div className="absolute -left-[34px] top-1 w-2.5 h-2.5 rounded-full bg-vela-dream-blue"></div>
-                <div className="text-vela-starlight-white font-satoshi font-bold text-subtitle">
+                <div className="text-vela-starlight-white font-body font-bold text-subtitle">
                   Today
                 </div>
-                <div className="text-vela-starlight-white font-satoshi text-subtitle leading-5 max-w-[246px]">
+                <div className="text-vela-starlight-white font-body text-subtitle leading-5 max-w-[246px]">
                   Unlock our library of meditations, sleep sounds, and more
                 </div>
               </div>
@@ -135,10 +135,10 @@ const HowTrialWorks: React.FC = () => {
               <div className="flex flex-col items-start relative z-10 mt-4">
                 {/* Dot */}
                 <div className="absolute -left-[34px] top-1 w-2.5 h-2.5 rounded-full bg-vela-dream-blue"></div>
-                <div className="text-vela-starlight-white font-satoshi font-bold text-subtitle">
+                <div className="text-vela-starlight-white font-body font-bold text-subtitle">
                   In 4 days
                 </div>
-                <div className="text-vela-starlight-white font-satoshi text-subtitle leading-5 max-w-[246px]">
+                <div className="text-vela-starlight-white font-body text-subtitle leading-5 max-w-[246px]">
                   You'll be charged, cancel anytime before.
                 </div>
               </div>
@@ -148,7 +148,7 @@ const HowTrialWorks: React.FC = () => {
             <div className="self-stretch text-vela-starlight-white text-center font-heading text-title-hero font-light px-4 pt-5">
               Why 4 days?
             </div>
-            <div className="self-stretch text-vela-starlight-white text-center font-satoshi text-subtitle leading-5 px-4">
+            <div className="self-stretch text-vela-starlight-white text-center font-body text-subtitle leading-5 px-4">
               Neuroscience has shown that 4 days is all it takes to start
               rewiring your brain.
             </div>
@@ -159,7 +159,7 @@ const HowTrialWorks: React.FC = () => {
             <div className="flex max-w-[480px] px-4 py-3 flex-col items-start gap-3 flex-1">
               <button
                 onClick={handleStartTrial}
-                className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90"
+                className="flex h-12 min-w-[84px] max-w-[480px] px-5 justify-center items-center self-stretch rounded-vela bg-vela-darker-variant text-vela-starlight-white font-body font-bold text-subtitle transition-all hover:bg-opacity-90"
               >
                 <div className="flex flex-col items-center">
                   <div className="truncate text-center">
@@ -174,7 +174,7 @@ const HowTrialWorks: React.FC = () => {
         {/* Bottom section */}
         <div className="flex flex-col items-center pb-5">
           {/* Terms and conditions */}
-          <div className="w-auto max-w-[358px] mx-auto px-4 text-center font-satoshi text-terms leading-[21px]">
+          <div className="w-auto max-w-[358px] mx-auto px-4 text-center font-body text-terms leading-[21px]">
             <span className="text-vela-darker-variant">
               By continuing, you agree to our{" "}
             </span>

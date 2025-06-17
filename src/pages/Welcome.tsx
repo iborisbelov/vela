@@ -35,7 +35,7 @@ const Welcome: React.FC = () => {
         {/* Content Section */}
         <div className="flex-1 flex flex-col justify-end items-center text-center px-4 space-y-6">
           {/* Subtitle */}
-          <div className="w-full text-vela-starlight-white text-center font-satoshi text-subtitle font-normal italic">
+          <div className="w-full text-vela-starlight-white text-center font-body text-subtitle font-normal italic">
             "Navigate from Within"
           </div>
 
@@ -45,7 +45,7 @@ const Welcome: React.FC = () => {
           </div>
 
           {/* Description */}
-          <div className="w-full text-vela-starlight-white text-center font-satoshi text-subtitle font-normal space-y-2">
+          <div className="w-full text-vela-starlight-white text-center font-body text-subtitle font-normal space-y-2">
             <div>
               the only meditation app built specifically for you. Personalized
               meditations built from your joy, identity, and dreams.
@@ -70,7 +70,7 @@ const Welcome: React.FC = () => {
             </div>
 
             {/* Sign In Text */}
-            <div className="text-center font-satoshi text-subtitle">
+            <div className="text-center font-body text-subtitle">
               <span className="text-vela-constellation-50">
                 Already have an account?
               </span>
@@ -79,7 +79,7 @@ const Welcome: React.FC = () => {
           </div>
 
           {/* Terms Text */}
-          <div className="w-full max-w-[358px] text-center font-satoshi text-terms leading-[21px] pt-2">
+          <div className="w-full max-w-[358px] text-center font-body text-terms leading-[21px] pt-2">
             <span className="text-vela-darker-variant">
               By continuing, you agree to our{" "}
             </span>

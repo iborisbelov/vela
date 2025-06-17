@@ -24,7 +24,7 @@ const VelaButton: React.FC<VelaButtonProps> = ({
       disabled={disabled}
       className={cn(
         // Base styles
-        "flex justify-center items-center font-satoshi font-bold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed",
+        "flex justify-center items-center font-body font-bold transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed",
 
         // Size variants
         {

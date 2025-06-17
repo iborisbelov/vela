@@ -49,7 +49,7 @@ const App = () => (
           <Route
             path="/sign-in"
             element={
-              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-satoshi">
+              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-body">
                 Sign In - Coming Soon
               </div>
             }
@@ -57,7 +57,7 @@ const App = () => (
           <Route
             path="/onboarding"
             element={
-              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-satoshi">
+              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-body">
                 Onboarding - Coming Soon
               </div>
             }
@@ -65,7 +65,7 @@ const App = () => (
           <Route
             path="/dream-builder"
             element={
-              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-satoshi">
+              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-body">
                 Dream Builder - Coming Soon
               </div>
             }
@@ -73,7 +73,7 @@ const App = () => (
           <Route
             path="/meditation"
             element={
-              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-satoshi">
+              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-body">
                 Meditation Player - Coming Soon
               </div>
             }
@@ -81,7 +81,7 @@ const App = () => (
           <Route
             path="/vault"
             element={
-              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-satoshi">
+              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-body">
                 Dream Vault - Coming Soon
               </div>
             }
@@ -89,7 +89,7 @@ const App = () => (
           <Route
             path="/home"
             element={
-              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-satoshi">
+              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-body">
                 Home Dashboard - Coming Soon
               </div>
             }
@@ -97,7 +97,7 @@ const App = () => (
           <Route
             path="/profile"
             element={
-              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-satoshi">
+              <div className="min-h-screen bg-vela-deep-space flex items-center justify-center text-vela-starlight-white font-body">
                 Profile - Coming Soon
               </div>
             }

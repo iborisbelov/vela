@@ -158,7 +158,7 @@ const ChooseRitual: React.FC = () => {
             <h1 className="text-vela-starlight-white text-center font-heading text-title-hero font-light">
               Choose & Customize Your Ritual
             </h1>
-            <p className="text-vela-starlight-white text-center font-satoshi text-subtitle leading-5">
+            <p className="text-vela-starlight-white text-center font-body text-subtitle leading-5">
               Select the perfect meditation experience for this moment
             </p>
           </div>
@@ -179,10 +179,10 @@ const ChooseRitual: React.FC = () => {
                   backdropFilter: "blur(5px)",
                 }}
               >
-                <div className="text-vela-starlight-white font-satoshi text-subtitle font-bold leading-6">
+                <div className="text-vela-starlight-white font-body text-subtitle font-bold leading-6">
                   {ritual.title}
                 </div>
-                <div className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
+                <div className="text-vela-starlight-white font-body text-subtitle leading-5">
                   {ritual.subtitle}
                 </div>
                 <div className="absolute top-5 right-5">{ritual.icon}</div>
@@ -197,7 +197,7 @@ const ChooseRitual: React.FC = () => {
             <button
               onClick={handleNext}
               disabled={!selectedRitual}
-              className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-satoshi font-bold text-subtitle transition-all relative ${
+              className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-body font-bold text-subtitle transition-all relative ${
                 selectedRitual
                   ? "bg-vela-darker-variant text-vela-starlight-white hover:bg-opacity-90"
                   : "bg-vela-darker-variant/30 text-vela-starlight-white/50 cursor-not-allowed"

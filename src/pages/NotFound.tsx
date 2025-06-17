@@ -25,7 +25,7 @@ const NotFound = () => {
         <h2 className="text-2xl font-light text-vela-starlight-white font-heading">
           Page not found
         </h2>
-        <p className="text-vela-starlight-white font-satoshi text-subtitle">
+        <p className="text-vela-starlight-white font-body text-subtitle">
           Sorry, we couldn't find the page you're looking for.
         </p>
         <VelaButton onClick={() => navigate("/")} className="mt-6">
