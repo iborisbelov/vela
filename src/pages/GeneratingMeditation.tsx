@@ -27,49 +27,24 @@ const GeneratingMeditation: React.FC = () => {
       <div className="absolute inset-0 z-0">
         {/* Spiral/vortex animation container */}
         <div className="relative w-full h-full flex items-center justify-center">
+        {/* Multiple rotating rings for vortex effect */}
+        <div className="relative w-full h-full flex items-center justify-center">
           {/* Multiple rotating rings for vortex effect */}
-          <div className="absolute w-96 h-96 animate-spin-slow">
-            <div
-              className="w-full h-full rounded-full border border-white/10"
-              style={{
-                animation: "spin 20s linear infinite",
-              }}
-            />
+          <div className="absolute w-96 h-96 animate-spin opacity-30">
+            <div className="w-full h-full rounded-full border border-white/10" />
           </div>
-          <div className="absolute w-80 h-80 animate-spin-reverse">
-            <div
-              className="w-full h-full rounded-full border border-white/15"
-              style={{
-                animation: "spin 15s linear infinite reverse",
-              }}
-            />
+          <div className="absolute w-80 h-80 animate-spin opacity-40">
+            <div className="w-full h-full rounded-full border border-white/15" />
           </div>
-          <div className="absolute w-64 h-64 animate-spin-slow">
-            <div
-              className="w-full h-full rounded-full border border-white/20"
-              style={{
-                animation: "spin 10s linear infinite",
-              }}
-            />
+          <div className="absolute w-64 h-64 animate-spin opacity-50">
+            <div className="w-full h-full rounded-full border border-white/20" />
           </div>
-          <div className="absolute w-48 h-48 animate-spin-reverse">
-            <div
-              className="w-full h-full rounded-full border border-white/25"
-              style={{
-                animation: "spin 8s linear infinite reverse",
-              }}
-            />
+          <div className="absolute w-48 h-48 animate-spin opacity-60">
+            <div className="w-full h-full rounded-full border border-white/25" />
           </div>
-          <div className="absolute w-32 h-32 animate-spin-slow">
-            <div
-              className="w-full h-full rounded-full border border-white/30"
-              style={{
-                animation: "spin 6s linear infinite",
-              }}
-            />
+          <div className="absolute w-32 h-32 animate-spin opacity-70">
+            <div className="w-full h-full rounded-full border border-white/30" />
           </div>
-
-          {/* Central glowing core */}
           <div className="absolute w-16 h-16 bg-white/20 rounded-full blur-sm animate-pulse" />
           <div className="absolute w-8 h-8 bg-white/40 rounded-full blur-xs animate-pulse" />
           <div className="absolute w-4 h-4 bg-white/60 rounded-full animate-pulse" />
@@ -96,7 +71,7 @@ const GeneratingMeditation: React.FC = () => {
       <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col justify-center items-center min-h-screen px-4">
         {/* Loading text */}
         <div className="text-center">
-          <p className="text-vela-starlight-white font-satoshi text-subtitle font-bold leading-5 max-w-[278px] animate-fade-in-out">
+          <p className="text-vela-starlight-white font-satoshi text-subtitle font-bold leading-5 max-w-[278px] animate-pulse">
             We're shaping your vision into a meditative journey…
           </p>
         </div>
@@ -116,70 +91,7 @@ const GeneratingMeditation: React.FC = () => {
         </div>
       </div>
 
-      {/* Custom CSS animations */}
-      <style jsx>{`
-        @keyframes spin {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
 
-        @keyframes fade-in-out {
-          0%,
-          100% {
-            opacity: 0.8;
-          }
-          50% {
-            opacity: 1;
-          }
-        }
-
-        @keyframes bounce {
-          0%,
-          20%,
-          53%,
-          80%,
-          100% {
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            transform: translate3d(0, 0, 0);
-          }
-          40%,
-          43% {
-            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-            transform: translate3d(0, -8px, 0);
-          }
-          70% {
-            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-            transform: translate3d(0, -4px, 0);
-          }
-          90% {
-            transform: translate3d(0, -2px, 0);
-          }
-        }
-
-        .animate-spin-slow {
-          animation: spin 20s linear infinite;
-        }
-
-        .animate-spin-reverse {
-          animation: spin 15s linear infinite reverse;
-        }
-
-        .animate-fade-in-out {
-          animation: fade-in-out 3s ease-in-out infinite;
-        }
-
-        .animate-bounce {
-          animation: bounce 1.4s infinite;
-        }
-
-        .blur-xs {
-          filter: blur(1px);
-        }
-      `}</style>
     </div>
   );
 };
