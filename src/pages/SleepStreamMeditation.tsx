@@ -146,7 +146,7 @@ const SleepStreamMeditation: React.FC = () => {
           {/* Meditation Image */}
           <div className="w-[170px] h-[170px] rounded-[20px] overflow-hidden">
             <img
-              src="https://cdn.builder.io/api/v1/assets/b3f92eb613934d858f85eaa13a3f8306/figma-screenshot-597301?format=webp&width=800"
+              src="https://cdn.builder.io/api/v1/assets/b3f92eb613934d858f85eaa13a3f8306/meditation-image-8a8212?format=webp&width=800"
               alt="Sleep Stream Meditation"
               className="w-full h-full object-cover"
             />
