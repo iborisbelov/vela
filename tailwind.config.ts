@@ -65,6 +65,7 @@ export default {
             "200": "#9BCDF1",
           },
         },
+        },
       },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
