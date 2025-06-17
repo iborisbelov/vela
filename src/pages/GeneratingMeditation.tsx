@@ -7,10 +7,9 @@ const GeneratingMeditation: React.FC = () => {
   useEffect(() => {
     // Simulate generation process - redirect after 5 seconds
     const timer = setTimeout(() => {
-      // TODO: Navigate to meditation result/player page when implemented
+      // Navigate to Sleep Stream Meditation player page
       console.log("Meditation generation complete!");
-      // For now, navigate back to welcome page
-      navigate("/");
+      navigate("/sleep-stream-meditation");
     }, 5000);
 
     return () => clearTimeout(timer);

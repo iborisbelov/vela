@@ -19,19 +19,6 @@ export default {
     },
     extend: {
       colors: {
-        // Vela Design System Colors
-        vela: {
-          "dream-blue": "#C9DFF4",
-          "starlight-white": "#F2EFEA",
-          "darker-variant": "#3B6EAA",
-          "deep-space": "#152B56",
-          constellation: {
-            "50": "#A4C7EA",
-            "100": "#C9DFF4",
-            "200": "#3B6EAA",
-          },
-        },
-        // Keep existing design system for components
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -65,6 +52,20 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Vela design system colors
+        vela: {
+          "dream-blue": "#C9DFF4",
+          "starlight-white": "#F2EFEA",
+          "darker-variant": "#3B6EAA",
+          "deep-space": "#152B56",
+          "celestial-blue": "#A4C7EA",
+          constellation: {
+            "50": "#E8F1FF",
+            "100": "#C1DFF8",
+            "200": "#9BCDF1",
+          },
+        },
+      },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -77,33 +78,23 @@ export default {
         },
       },
       fontFamily: {
-        canela: ["Canela Light", "Canela Trial", "serif"],
-        satoshi: [
-          "Satoshi",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Roboto",
-          "Helvetica",
-          "sans-serif",
-        ],
+        'canela': ['Canela Light', 'Canela Trial', 'serif'],
+        'satoshi': ['Satoshi', '-apple-system', 'BlinkMacSystemFont', 'Roboto', 'Helvetica', 'sans-serif'],
       },
       fontSize: {
-        "title-hero": [
-          "38px",
-          { lineHeight: "normal", letterSpacing: "-0.95px" },
-        ],
-        subtitle: ["16px", { lineHeight: "24px" }],
-        body: ["16px", { lineHeight: "20px" }],
-        terms: ["12px", { lineHeight: "21px" }],
+        'title-hero': ['38px', { lineHeight: 'normal', letterSpacing: '-0.95px' }],
+        'subtitle': ['16px', { lineHeight: '24px' }],
+        'body': ['16px', { lineHeight: '20px' }],
+        'terms': ['12px', { lineHeight: '21px' }],
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-        vela: "24px",
+        'vela': '24px',
       },
       backgroundImage: {
-        "starry-night": "linear-gradient(180deg, #152B56 0%, #1a3a6b 100%)",
+        'starry-night': "linear-gradient(180deg, #152B56 0%, #1a3a6b 100%)",
       },
       keyframes: {
         "accordion-down": {
@@ -122,11 +113,11 @@ export default {
             height: "0",
           },
         },
-        twinkle: {
+        "twinkle": {
           "0%, 100%": { opacity: "0.3" },
           "50%": { opacity: "1" },
         },
-        float: {
+        "float": {
           "0%, 100%": { transform: "translateY(0px)" },
           "50%": { transform: "translateY(-10px)" },
         },
@@ -134,8 +125,8 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        twinkle: "twinkle 3s ease-in-out infinite",
-        float: "float 6s ease-in-out infinite",
+        "twinkle": "twinkle 3s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite",
       },
     },
   },

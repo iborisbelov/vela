@@ -12,6 +12,7 @@ import DreamLifeVision from "./pages/DreamLifeVision";
 import ChooseRitual from "./pages/ChooseRitual";
 import CustomizeExperience from "./pages/CustomizeExperience";
 import GeneratingMeditation from "./pages/GeneratingMeditation";
+import SleepStreamMeditation from "./pages/SleepStreamMeditation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,10 @@ const App = () => (
           <Route
             path="/generating-meditation"
             element={<GeneratingMeditation />}
+          />
+          <Route
+            path="/sleep-stream-meditation"
+            element={<SleepStreamMeditation />}
           />
 
           {/* Placeholder routes for future implementation */}
