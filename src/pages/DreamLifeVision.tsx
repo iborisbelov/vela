@@ -7,9 +7,9 @@ const DreamLifeVision: React.FC = () => {
   const [happiness, setHappiness] = useState<string>("");
 
   const handleNext = () => {
-    // Navigate to next step (placeholder for now)
+    // Navigate to third step of meditation generator
     console.log("Form data:", { dreamLife, happiness });
-    // TODO: Navigate to step 3 when implemented
+    navigate("/choose-ritual");
   };
 
   const handleBack = () => {
