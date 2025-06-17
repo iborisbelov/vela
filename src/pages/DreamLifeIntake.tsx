@@ -103,8 +103,8 @@ const DreamLifeIntake: React.FC = () => {
           </div>
 
           {/* Age question */}
-          <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
-            <div className="pb-2">
+          <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm flex flex-col items-start gap-4">
+            <div>
               <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 How old are you?
               </p>
@@ -127,8 +127,8 @@ const DreamLifeIntake: React.FC = () => {
           </div>
 
           {/* Gender question */}
-          <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
-            <div className="pb-2">
+          <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm flex flex-col items-start gap-4">
+            <div>
               <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 Gender?
               </p>
@@ -155,8 +155,8 @@ const DreamLifeIntake: React.FC = () => {
           </div>
 
           {/* Goals question */}
-          <div className="w-full max-w-[358px] flex flex-col items-start gap-2.5">
-            <div className="pb-2">
+          <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm flex flex-col items-start gap-4">
+            <div>
               <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 Are there specific goals you want to accomplish, experiences you
                 want to have, or habits you want to form or change?
