@@ -77,7 +77,7 @@ export default {
         },
       },
       fontFamily: {
-        canela: ["Canela Trial", "serif"],
+        canela: ["Canela Light", "Canela Trial", "serif"],
         satoshi: [
           "Satoshi",
           "-apple-system",

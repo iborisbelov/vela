@@ -1,6 +1,17 @@
 @import url("https://fonts.cdnfonts.com/css/satoshi");
 
 @font-face {
+  font-family: "Canela Light";
+  src:
+    url("/fonts/Canela-Light.woff2") format("woff2"),
+    url("/fonts/Canela-Light.woff") format("woff"),
+    url("/fonts/Canela-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Canela Trial";
   src: url("https://db.onlinewebfonts.com/t/cec8bcc2981332dc1c08206d287c0efe.eot");
   src:
