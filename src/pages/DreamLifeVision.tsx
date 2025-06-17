@@ -84,7 +84,7 @@ const DreamLifeVision: React.FC = () => {
         <div className="flex-1 flex flex-col items-center px-4 space-y-6">
           {/* Title section */}
           <div className="flex flex-col items-center gap-1.5 w-full">
-            <h1 className="text-vela-starlight-white text-center font-canela text-title-hero font-light">
+            <h1 className="text-vela-starlight-white text-center font-heading text-title-hero font-light">
               Dream Life Vision
             </h1>
             <div className="text-vela-starlight-white text-center font-satoshi text-terms font-bold tracking-wider">

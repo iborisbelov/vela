@@ -19,10 +19,10 @@ const NotFound = () => {
       <StarryBackground />
 
       <div className="relative z-10 max-w-md mx-auto text-center space-y-6">
-        <h1 className="text-6xl font-light text-vela-dream-blue font-canela">
+        <h1 className="text-6xl font-light text-vela-dream-blue font-heading">
           404
         </h1>
-        <h2 className="text-2xl font-light text-vela-starlight-white font-canela">
+        <h2 className="text-2xl font-light text-vela-starlight-white font-heading">
           Page not found
         </h2>
         <p className="text-vela-starlight-white font-satoshi text-subtitle">

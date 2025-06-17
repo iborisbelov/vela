@@ -110,7 +110,7 @@ const CustomizeExperience: React.FC = () => {
         <div className="flex-1 flex flex-col items-center px-4 space-y-6">
           {/* Title section */}
           <div className="flex flex-col items-center gap-4 w-full">
-            <h1 className="text-vela-starlight-white text-center font-canela text-title-hero font-light">
+            <h1 className="text-vela-starlight-white text-center font-heading text-title-hero font-light">
               Customize Your Experience
             </h1>
             <p className="text-vela-starlight-white text-center font-satoshi text-subtitle leading-5">

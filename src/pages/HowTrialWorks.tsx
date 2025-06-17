@@ -52,7 +52,7 @@ const HowTrialWorks: React.FC = () => {
         <div className="flex flex-col items-stretch self-stretch flex-1">
           {/* Title section */}
           <div className="flex flex-col items-center self-stretch px-4 pt-5 pb-3">
-            <h1 className="self-stretch text-vela-starlight-white text-center font-canela text-title-hero font-light">
+            <h1 className="self-stretch text-vela-starlight-white text-center font-heading text-title-hero font-light">
               How your trial works
             </h1>
           </div>
@@ -145,7 +145,7 @@ const HowTrialWorks: React.FC = () => {
             </div>
 
             {/* Why 4 days section */}
-            <div className="self-stretch text-vela-starlight-white text-center font-canela text-title-hero font-light px-4 pt-5">
+            <div className="self-stretch text-vela-starlight-white text-center font-heading text-title-hero font-light px-4 pt-5">
               Why 4 days?
             </div>
             <div className="self-stretch text-vela-starlight-white text-center font-satoshi text-subtitle leading-5 px-4">

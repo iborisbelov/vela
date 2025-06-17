@@ -45,7 +45,7 @@ const SignUp: React.FC = () => {
         {/* Main content section */}
         <div className="flex flex-col">
           {/* Title section */}
-          <div className="self-stretch text-vela-starlight-white text-center font-canela text-title-hero font-light px-4 pt-5 pb-3">
+          <div className="self-stretch text-vela-starlight-white text-center font-heading text-title-hero font-light px-4 pt-5 pb-3">
             Continue to sign up
           </div>
 

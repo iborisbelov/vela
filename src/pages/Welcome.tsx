@@ -40,7 +40,7 @@ const Welcome: React.FC = () => {
           </div>
 
           {/* Main Title */}
-          <div className="w-full text-vela-starlight-white text-center font-canela text-title-hero font-light">
+          <div className="w-full text-vela-starlight-white text-center font-heading text-title-hero font-light">
             Welcome to Vela
           </div>
 

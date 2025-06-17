@@ -74,7 +74,7 @@ const CreateAccount: React.FC = () => {
           >
             {/* Title */}
             <div className="flex flex-col items-center self-stretch px-4 pt-5 pb-3">
-              <h1 className="self-stretch text-vela-starlight-white text-center font-canela text-title-hero font-light">
+              <h1 className="self-stretch text-vela-starlight-white text-center font-heading text-title-hero font-light">
                 Create an account
               </h1>
             </div>
