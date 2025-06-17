@@ -98,7 +98,7 @@ const DreamLifeIntake: React.FC = () => {
 
           {/* Description container */}
           <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm">
-            <p className="text-vela-starlight-white text-center font-body text-subtitle leading-5">
+            <p className="text-vela-starlight-white text-center font-satoshi text-subtitle leading-5">
               Take a quiet moment to connect with yourself. These questions
               aren't just journaling—they activate the parts of your brain
               responsible for vision, clarity, and motivation. You're about to
@@ -109,7 +109,7 @@ const DreamLifeIntake: React.FC = () => {
           {/* Age question */}
           <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
             <div className="pb-2">
-              <p className="text-vela-starlight-white font-body text-subtitle leading-5">
+              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 How old are you?
               </p>
             </div>
@@ -126,7 +126,7 @@ const DreamLifeIntake: React.FC = () => {
                     backdropFilter: "blur(5px)",
                   }}
                 >
-                  <span className="text-vela-dream-blue font-body text-terms font-bold leading-6">
+                  <span className="text-vela-dream-blue font-satoshi text-terms font-bold leading-6">
                     {age}
                   </span>
                 </button>
@@ -137,7 +137,7 @@ const DreamLifeIntake: React.FC = () => {
           {/* Gender question */}
           <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
             <div className="pb-2">
-              <p className="text-vela-starlight-white font-body text-subtitle leading-5">
+              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 Gender?
               </p>
             </div>
@@ -158,7 +158,7 @@ const DreamLifeIntake: React.FC = () => {
                     backdropFilter: "blur(5px)",
                   }}
                 >
-                  <span className="text-vela-dream-blue font-body text-terms font-bold leading-6">
+                  <span className="text-vela-dream-blue font-satoshi text-terms font-bold leading-6">
                     {gender}
                   </span>
                 </button>
@@ -169,7 +169,7 @@ const DreamLifeIntake: React.FC = () => {
           {/* Goals question */}
           <div className="w-full max-w-[358px] flex flex-col items-start gap-2.5">
             <div className="pb-2">
-              <p className="text-vela-starlight-white font-body text-subtitle leading-5">
+              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
                 Are there specific goals you want to accomplish, experiences you
                 want to have, or habits you want to form or change?
               </p>
@@ -179,7 +179,7 @@ const DreamLifeIntake: React.FC = () => {
                 value={goals}
                 onChange={(e) => setGoals(e.target.value)}
                 placeholder="Describe your text..."
-                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-body text-terms leading-6 placeholder:text-vela-dream-blue"
+                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-satoshi text-terms leading-6 placeholder:text-vela-dream-blue"
                 style={{
                   background: "rgba(164, 199, 234, 0.53)",
                   backdropFilter: "blur(5px)",
@@ -195,7 +195,7 @@ const DreamLifeIntake: React.FC = () => {
             <button
               onClick={handleNext}
               disabled={!isFormValid}
-              className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-body font-bold text-subtitle transition-all relative ${
+              className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-satoshi font-bold text-subtitle transition-all relative ${
                 isFormValid
                   ? "bg-vela-darker-variant text-vela-starlight-white hover:bg-opacity-90"
                   : "bg-vela-darker-variant/30 text-vela-starlight-white/50 cursor-not-allowed"
