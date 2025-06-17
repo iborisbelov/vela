@@ -1,23 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const DreamLifeIntake: React.FC = () => {
+const DreamLifeVision: React.FC = () => {
   const navigate = useNavigate();
-  const [selectedAge, setSelectedAge] = useState<string>("");
-  const [selectedGender, setSelectedGender] = useState<string>("");
-  const [goals, setGoals] = useState<string>("");
-
-  const ageOptions = ["18-24", "25-34", "35-44", "45-54", "55+"];
-  const genderOptions = ["Female", "Male", "Non-binary/Other"];
+  const [dreamLife, setDreamLife] = useState<string>("");
+  const [happiness, setHappiness] = useState<string>("");
 
   const handleNext = () => {
-    // Navigate to second step of meditation generator
-    console.log("Form data:", { selectedAge, selectedGender, goals });
-    navigate("/dream-life-vision");
+    // Navigate to next step (placeholder for now)
+    console.log("Form data:", { dreamLife, happiness });
+    // TODO: Navigate to step 3 when implemented
   };
 
   const handleBack = () => {
-    navigate("/how-trial-works");
+    navigate("/dream-life-intake");
   };
 
   return (
@@ -58,7 +54,7 @@ const DreamLifeIntake: React.FC = () => {
               <div
                 key={step}
                 className={`h-2 flex-1 max-w-[37px] rounded-full ${
-                  step === 1 ? "bg-vela-dream-blue" : "bg-white/8"
+                  step <= 2 ? "bg-vela-dream-blue" : "bg-white/8"
                 }`}
               />
             ))}
@@ -85,96 +81,58 @@ const DreamLifeIntake: React.FC = () => {
           {/* Title section */}
           <div className="flex flex-col items-center gap-1.5 w-full">
             <h1 className="text-vela-starlight-white text-center font-canela text-title-hero font-light">
-              Dream life intake
+              Dream Life Vision
             </h1>
             <div className="text-vela-starlight-white text-center font-satoshi text-terms font-bold tracking-wider">
               THE VISION BUILDER
             </div>
           </div>
 
-          {/* Description container */}
-          <div className="w-full max-w-[358px] p-5 rounded-[20px] bg-vela-constellation-50/50 backdrop-blur-sm">
-            <p className="text-vela-starlight-white text-center font-satoshi text-subtitle leading-5">
-              Take a quiet moment to connect with yourself. These questions
-              aren't just journaling—they activate the parts of your brain
-              responsible for vision, clarity, and motivation. You're about to
-              build a blueprint for your dream life.
-            </p>
-          </div>
-
-          {/* Age question */}
-          <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
-            <div className="pb-2">
-              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
-                How old are you?
-              </p>
-            </div>
-            <div className="flex items-start gap-2.5 flex-wrap">
-              {ageOptions.map((age) => (
-                <button
-                  key={age}
-                  onClick={() => setSelectedAge(age)}
-                  className={`h-9 px-5 flex justify-center items-center rounded-[20px] transition-all hover:opacity-80 ${
-                    selectedAge === age ? "ring-2 ring-vela-dream-blue" : ""
-                  }`}
-                  style={{
-                    background: "rgba(164, 199, 234, 0.53)",
-                    backdropFilter: "blur(5px)",
-                  }}
-                >
-                  <span className="text-vela-dream-blue font-satoshi text-terms font-bold leading-6">
-                    {age}
-                  </span>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Gender question */}
-          <div className="w-full max-w-[358px] py-2.5 flex flex-col items-start gap-2">
-            <div className="pb-2">
-              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
-                Gender?
-              </p>
-            </div>
-            <div className="flex items-start gap-2.5 w-full">
-              {genderOptions.map((gender) => (
-                <button
-                  key={gender}
-                  onClick={() => setSelectedGender(gender)}
-                  className={`h-9 px-5 flex justify-center items-center rounded-[20px] transition-all hover:opacity-80 ${
-                    gender === "Non-binary/Other" ? "flex-1" : ""
-                  } ${
-                    selectedGender === gender
-                      ? "ring-2 ring-vela-dream-blue"
-                      : ""
-                  }`}
-                  style={{
-                    background: "rgba(164, 199, 234, 0.53)",
-                    backdropFilter: "blur(5px)",
-                  }}
-                >
-                  <span className="text-vela-dream-blue font-satoshi text-terms font-bold leading-6">
-                    {gender}
-                  </span>
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Goals question */}
+          {/* First question - Dream life */}
           <div className="w-full max-w-[358px] flex flex-col items-start gap-2.5">
             <div className="pb-2">
               <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
-                Are there specific goals you want to accomplish, experiences you
-                want to have, or habits you want to form or change?
+                <span className="font-bold">
+                  Tell me about your dream life.
+                </span>
+                <span className="font-normal">
+                  {" "}
+                  Be sure to include Sensory Details: What does it look and feel
+                  like? What are you doing? Who are you with? What do you see,
+                  hear, smell?
+                </span>
               </p>
             </div>
             <div className="w-full">
               <textarea
-                value={goals}
-                onChange={(e) => setGoals(e.target.value)}
-                placeholder="Describe your text..."
+                value={dreamLife}
+                onChange={(e) => setDreamLife(e.target.value)}
+                placeholder="Close your eyes and describe the life you envision..."
+                className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-satoshi text-terms leading-6 placeholder:text-vela-dream-blue"
+                style={{
+                  background: "rgba(164, 199, 234, 0.53)",
+                  backdropFilter: "blur(5px)",
+                }}
+              />
+            </div>
+          </div>
+
+          {/* Second question - Happiness */}
+          <div className="w-full max-w-[358px] flex flex-col items-start gap-2.5">
+            <div className="pb-2">
+              <p className="text-vela-starlight-white font-satoshi text-subtitle leading-5">
+                <span className="font-bold">What makes you happy?</span>
+                <span className="font-normal">
+                  {" "}
+                  What makes you feel the most "you"?
+                </span>
+              </p>
+            </div>
+            <div className="w-full">
+              <textarea
+                value={happiness}
+                onChange={(e) => setHappiness(e.target.value)}
+                placeholder="When do you feel most authentic and alive?"
                 className="w-full h-[140px] p-5 rounded-[10px] border-none outline-none resize-none text-vela-starlight-white font-satoshi text-terms leading-6 placeholder:text-vela-dream-blue"
                 style={{
                   background: "rgba(164, 199, 234, 0.53)",
@@ -185,12 +143,33 @@ const DreamLifeIntake: React.FC = () => {
           </div>
         </div>
 
-        {/* Next button */}
+        {/* Bottom buttons */}
         <div className="w-full px-4 pb-3">
-          <div className="max-w-[480px] px-3 py-3 mx-auto">
+          <div className="max-w-[480px] px-3 py-3 mx-auto flex gap-3">
+            {/* Back button */}
+            <button
+              onClick={handleBack}
+              className="flex h-12 flex-1 px-5 justify-center items-center rounded-vela border-2 border-vela-darker-variant text-vela-darker-variant font-satoshi font-bold text-subtitle transition-all hover:bg-vela-darker-variant hover:text-vela-starlight-white relative"
+            >
+              <svg
+                className="w-6 h-6 absolute left-5 fill-current"
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M18 8C18 8.41421 17.6642 8.75 17.25 8.75H2.56031L8.03063 14.2194C8.32368 14.5124 8.32368 14.9876 8.03063 15.2806C7.73757 15.5737 7.26243 15.5737 6.96937 15.2806L0.219375 8.53063C0.0785422 8.38995 -0.000590086 8.19906 -0.000590086 8C-0.000590086 7.80094 0.0785422 7.61005 0.219375 7.46937L6.96937 0.719375C7.26243 0.426319 7.73757 0.426319 8.03063 0.719375C8.32368 1.01243 8.32368 1.48757 8.03063 1.78062L2.56031 7.25H17.25C17.6642 7.25 18 7.58579 18 8Z"
+                />
+              </svg>
+              <span>Back</span>
+            </button>
+
+            {/* Next button */}
             <button
               onClick={handleNext}
-              className="flex h-12 w-full px-5 justify-center items-center rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90 relative"
+              className="flex h-12 flex-1 px-5 justify-center items-center rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90 relative"
             >
               <span>Next</span>
               <svg
@@ -214,4 +193,4 @@ const DreamLifeIntake: React.FC = () => {
   );
 };
 
-export default DreamLifeIntake;
+export default DreamLifeVision;
