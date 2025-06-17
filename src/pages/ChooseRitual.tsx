@@ -82,9 +82,9 @@ const ChooseRitual: React.FC = () => {
 
   const handleNext = () => {
     if (!selectedRitual) return;
-    // Navigate to next step (placeholder for now)
+    // Navigate to fourth step of meditation generator
     console.log("Selected ritual:", selectedRitual);
-    // TODO: Navigate to step 4 when implemented
+    navigate("/customize-experience");
   };
 
   const handleBack = () => {

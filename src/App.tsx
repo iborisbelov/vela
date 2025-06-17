@@ -10,6 +10,7 @@ import HowTrialWorks from "./pages/HowTrialWorks";
 import DreamLifeIntake from "./pages/DreamLifeIntake";
 import DreamLifeVision from "./pages/DreamLifeVision";
 import ChooseRitual from "./pages/ChooseRitual";
+import CustomizeExperience from "./pages/CustomizeExperience";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,10 @@ const App = () => (
           <Route path="/dream-life-intake" element={<DreamLifeIntake />} />
           <Route path="/dream-life-vision" element={<DreamLifeVision />} />
           <Route path="/choose-ritual" element={<ChooseRitual />} />
+          <Route
+            path="/customize-experience"
+            element={<CustomizeExperience />}
+          />
 
           {/* Placeholder routes for future implementation */}
           <Route
