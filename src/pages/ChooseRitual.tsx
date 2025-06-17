@@ -200,12 +200,16 @@ const ChooseRitual: React.FC = () => {
               className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-satoshi font-bold text-subtitle transition-all relative ${
                 selectedRitual
                   ? "bg-vela-darker-variant text-vela-starlight-white hover:bg-opacity-90"
-                  : "bg-gray-400 text-gray-600 cursor-not-allowed"
+                  : "bg-vela-darker-variant/30 text-vela-starlight-white/50 cursor-not-allowed"
               }`}
             >
               <span>Next</span>
               <svg
-                className="w-6 h-6 absolute right-5 fill-current"
+                className={`w-6 h-6 absolute right-5 ${
+                  selectedRitual
+                    ? "fill-vela-starlight-white"
+                    : "fill-vela-starlight-white/50"
+                }`}
                 width="18"
                 height="16"
                 viewBox="0 0 18 16"

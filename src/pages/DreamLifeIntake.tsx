@@ -10,7 +10,11 @@ const DreamLifeIntake: React.FC = () => {
   const ageOptions = ["18-24", "25-34", "35-44", "45-54", "55+"];
   const genderOptions = ["Female", "Male", "Non-binary/Other"];
 
+  // Check if all required fields are filled
+  const isFormValid = selectedAge && selectedGender && goals.trim();
+
   const handleNext = () => {
+    if (!isFormValid) return;
     // Navigate to second step of meditation generator
     console.log("Form data:", { selectedAge, selectedGender, goals });
     navigate("/dream-life-vision");
@@ -190,11 +194,20 @@ const DreamLifeIntake: React.FC = () => {
           <div className="max-w-[480px] px-3 py-3 mx-auto">
             <button
               onClick={handleNext}
-              className="flex h-12 w-full px-5 justify-center items-center rounded-vela bg-vela-darker-variant text-vela-starlight-white font-satoshi font-bold text-subtitle transition-all hover:bg-opacity-90 relative"
+              disabled={!isFormValid}
+              className={`flex h-12 w-full px-5 justify-center items-center rounded-vela font-satoshi font-bold text-subtitle transition-all relative ${
+                isFormValid
+                  ? "bg-vela-darker-variant text-vela-starlight-white hover:bg-opacity-90"
+                  : "bg-vela-darker-variant/30 text-vela-starlight-white/50 cursor-not-allowed"
+              }`}
             >
               <span>Next</span>
               <svg
-                className="w-6 h-6 absolute right-5 fill-vela-starlight-white"
+                className={`w-6 h-6 absolute right-5 ${
+                  isFormValid
+                    ? "fill-vela-starlight-white"
+                    : "fill-vela-starlight-white/50"
+                }`}
                 width="18"
                 height="16"
                 viewBox="0 0 18 16"
@@ -203,7 +216,6 @@ const DreamLifeIntake: React.FC = () => {
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M0 8C0 8.41421 0.335787 8.75 0.75 8.75H15.4397L9.96937 14.2194C9.67632 14.5124 9.67632 14.9876 9.96937 15.2806C10.2624 15.5737 10.7376 15.5737 11.0306 15.2806L17.7806 8.53063C17.9215 8.38995 18.0006 8.19906 18.0006 8C18.0006 7.80094 17.9215 7.61005 17.7806 7.46937L11.0306 0.719375C10.7376 0.426319 10.2624 0.426319 9.96937 0.719375C9.67632 1.01243 9.67632 1.48757 9.96937 1.78062L15.4397 7.25H0.75C0.335787 7.25 0 7.58579 0 8Z"
-                  fill="#F2EFEA"
                 />
               </svg>
             </button>
