@@ -27,26 +27,35 @@ const GeneratingMeditation: React.FC = () => {
       <div className="absolute inset-0 z-0">
         {/* Spiral/vortex animation container */}
         <div className="relative w-full h-full flex items-center justify-center">
-        {/* Multiple rotating rings for vortex effect */}
-        <div className="relative w-full h-full flex items-center justify-center">
           {/* Multiple rotating rings for vortex effect */}
-          <div className="absolute w-96 h-96 animate-spin opacity-30">
+          <div className="absolute w-96 h-96 animate-spin duration-[20s] opacity-30">
             <div className="w-full h-full rounded-full border border-white/10" />
           </div>
-          <div className="absolute w-80 h-80 animate-spin opacity-40">
+          <div
+            className="absolute w-80 h-80 animate-spin opacity-40"
+            style={{ animationDirection: "reverse", animationDuration: "15s" }}
+          >
             <div className="w-full h-full rounded-full border border-white/15" />
           </div>
-          <div className="absolute w-64 h-64 animate-spin opacity-50">
+          <div className="absolute w-64 h-64 animate-spin duration-[10s] opacity-50">
             <div className="w-full h-full rounded-full border border-white/20" />
           </div>
-          <div className="absolute w-48 h-48 animate-spin opacity-60">
+          <div
+            className="absolute w-48 h-48 animate-spin opacity-60"
+            style={{ animationDirection: "reverse", animationDuration: "8s" }}
+          >
             <div className="w-full h-full rounded-full border border-white/25" />
           </div>
-          <div className="absolute w-32 h-32 animate-spin opacity-70">
+          <div className="absolute w-32 h-32 animate-spin duration-[6s] opacity-70">
             <div className="w-full h-full rounded-full border border-white/30" />
           </div>
+
+          {/* Central glowing core */}
           <div className="absolute w-16 h-16 bg-white/20 rounded-full blur-sm animate-pulse" />
-          <div className="absolute w-8 h-8 bg-white/40 rounded-full blur-xs animate-pulse" />
+          <div
+            className="absolute w-8 h-8 bg-white/40 rounded-full animate-pulse"
+            style={{ filter: "blur(1px)" }}
+          />
           <div className="absolute w-4 h-4 bg-white/60 rounded-full animate-pulse" />
         </div>
 
@@ -90,8 +99,6 @@ const GeneratingMeditation: React.FC = () => {
           ))}
         </div>
       </div>
-
-
     </div>
   );
 };
