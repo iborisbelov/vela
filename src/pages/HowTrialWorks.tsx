@@ -6,8 +6,8 @@ const HowTrialWorks: React.FC = () => {
   const [planType, setPlanType] = useState<"annual" | "monthly">("annual");
 
   const handleStartTrial = () => {
-    // Handle trial start logic
-    console.log("Starting trial with plan:", planType);
+    // Navigate to first step of meditation generator
+    navigate("/dream-life-intake");
   };
 
   return (
