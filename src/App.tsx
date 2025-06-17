@@ -11,6 +11,7 @@ import DreamLifeIntake from "./pages/DreamLifeIntake";
 import DreamLifeVision from "./pages/DreamLifeVision";
 import ChooseRitual from "./pages/ChooseRitual";
 import CustomizeExperience from "./pages/CustomizeExperience";
+import GeneratingMeditation from "./pages/GeneratingMeditation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,10 @@ const App = () => (
           <Route
             path="/customize-experience"
             element={<CustomizeExperience />}
+          />
+          <Route
+            path="/generating-meditation"
+            element={<GeneratingMeditation />}
           />
 
           {/* Placeholder routes for future implementation */}

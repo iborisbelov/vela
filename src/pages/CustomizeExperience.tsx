@@ -33,13 +33,13 @@ const CustomizeExperience: React.FC = () => {
 
   const handleGenerate = () => {
     if (!isFormValid) return;
-    // Navigate to next step or generate meditation
+    // Navigate to generating meditation loading page
     console.log("Customization data:", {
       selectedTone,
       selectedVoice,
       selectedDuration,
     });
-    // TODO: Navigate to step 5 or generation result when implemented
+    navigate("/generating-meditation");
   };
 
   const handleBack = () => {

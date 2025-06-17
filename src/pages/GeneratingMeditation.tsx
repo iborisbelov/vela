@@ -1,0 +1,188 @@
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+const GeneratingMeditation: React.FC = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Simulate generation process - redirect after 5 seconds
+    const timer = setTimeout(() => {
+      // TODO: Navigate to meditation result/player page when implemented
+      console.log("Meditation generation complete!");
+      // For now, navigate back to welcome page
+      navigate("/");
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
+  return (
+    <div
+      className="relative min-h-screen flex flex-col bg-vela-deep-space overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage:
+          "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Ffb5645559ede4ce7b190024271b8c38e)",
+      }}
+    >
+      {/* Animated background overlay */}
+      <div className="absolute inset-0 z-0">
+        {/* Spiral/vortex animation container */}
+        <div className="relative w-full h-full flex items-center justify-center">
+          {/* Multiple rotating rings for vortex effect */}
+          <div className="absolute w-96 h-96 animate-spin-slow">
+            <div
+              className="w-full h-full rounded-full border border-white/10"
+              style={{
+                animation: "spin 20s linear infinite",
+              }}
+            />
+          </div>
+          <div className="absolute w-80 h-80 animate-spin-reverse">
+            <div
+              className="w-full h-full rounded-full border border-white/15"
+              style={{
+                animation: "spin 15s linear infinite reverse",
+              }}
+            />
+          </div>
+          <div className="absolute w-64 h-64 animate-spin-slow">
+            <div
+              className="w-full h-full rounded-full border border-white/20"
+              style={{
+                animation: "spin 10s linear infinite",
+              }}
+            />
+          </div>
+          <div className="absolute w-48 h-48 animate-spin-reverse">
+            <div
+              className="w-full h-full rounded-full border border-white/25"
+              style={{
+                animation: "spin 8s linear infinite reverse",
+              }}
+            />
+          </div>
+          <div className="absolute w-32 h-32 animate-spin-slow">
+            <div
+              className="w-full h-full rounded-full border border-white/30"
+              style={{
+                animation: "spin 6s linear infinite",
+              }}
+            />
+          </div>
+
+          {/* Central glowing core */}
+          <div className="absolute w-16 h-16 bg-white/20 rounded-full blur-sm animate-pulse" />
+          <div className="absolute w-8 h-8 bg-white/40 rounded-full blur-xs animate-pulse" />
+          <div className="absolute w-4 h-4 bg-white/60 rounded-full animate-pulse" />
+        </div>
+
+        {/* Floating particles */}
+        <div className="absolute inset-0 overflow-hidden">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-white/30 rounded-full animate-pulse"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 3}s`,
+                animationDuration: `${2 + Math.random() * 2}s`,
+              }}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Content container */}
+      <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col justify-center items-center min-h-screen px-4">
+        {/* Loading text */}
+        <div className="text-center">
+          <p className="text-vela-starlight-white font-satoshi text-subtitle font-bold leading-5 max-w-[278px] animate-fade-in-out">
+            We're shaping your vision into a meditative journey…
+          </p>
+        </div>
+
+        {/* Loading dots animation */}
+        <div className="flex items-center space-x-2 mt-8">
+          {[0, 1, 2].map((i) => (
+            <div
+              key={i}
+              className="w-2 h-2 bg-vela-starlight-white rounded-full animate-bounce"
+              style={{
+                animationDelay: `${i * 0.2}s`,
+                animationDuration: "1.4s",
+              }}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Custom CSS animations */}
+      <style jsx>{`
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes fade-in-out {
+          0%,
+          100% {
+            opacity: 0.8;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+
+        @keyframes bounce {
+          0%,
+          20%,
+          53%,
+          80%,
+          100% {
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            transform: translate3d(0, 0, 0);
+          }
+          40%,
+          43% {
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            transform: translate3d(0, -8px, 0);
+          }
+          70% {
+            animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            transform: translate3d(0, -4px, 0);
+          }
+          90% {
+            transform: translate3d(0, -2px, 0);
+          }
+        }
+
+        .animate-spin-slow {
+          animation: spin 20s linear infinite;
+        }
+
+        .animate-spin-reverse {
+          animation: spin 15s linear infinite reverse;
+        }
+
+        .animate-fade-in-out {
+          animation: fade-in-out 3s ease-in-out infinite;
+        }
+
+        .animate-bounce {
+          animation: bounce 1.4s infinite;
+        }
+
+        .blur-xs {
+          filter: blur(1px);
+        }
+      `}</style>
+    </div>
+  );
+};
+
+export default GeneratingMeditation;
