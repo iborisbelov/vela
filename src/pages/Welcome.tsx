@@ -1,36 +1,30 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import VelaButton from "@/components/VelaButton";
+import VelaButton from "../components/VelaButton";
 
 const Welcome: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div
-      className="relative min-h-screen flex flex-col justify-between items-center py-5 px-0 bg-vela-deep-space overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="relative min-h-screen flex flex-col bg-vela-deep-space overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fb80a04890b9742d5aba8e99736911cbf)"
+        backgroundImage:
+          "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fe2b1054892dc42b29c13bce357ce3603)",
       }}
     >
-      {/* Content container */}
-      <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col justify-between items-center min-h-screen py-5">
-        {/* Logo/Brand */}
+      {/* Hero image */}
+      <div className="relative z-10 w-full flex justify-center pt-8">
         <img
           loading="lazy"
-          srcSet="https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2?width=100 100w, https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2?width=200 200w, https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2?width=400 400w, https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2?width=800 800w, https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2?width=1200 1200w, https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2?width=1600 1600w, https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2?width=2000 2000w, https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2"
-          alt="Vela logo"
-          className="aspect-square object-cover object-center w-full mt-5 min-h-5 min-w-5 overflow-hidden max-w-[91px]"
+          src="https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2Fd09c0df2054c4a9bb9600a09bffd6dd2"
+          alt="Vela hero constellation"
+          className="w-auto h-auto max-w-[300px] max-h-[200px] object-contain"
         />
+      </div>
 
-        {/* Hero Image */}
-        <div
-          className="w-full max-w-[314px] h-[292px] flex-shrink-0 rounded-lg mb-8 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fb3f92eb613934d858f85eaa13a3f8306%2F37ab520a469a459bae058a74cc3589da)"
-          }}
-        />
-
-        {/* Content Section */}
+      {/* Content Overlay */}
+      <div className="relative z-10 flex-1 flex items-center">
         <div className="relative z-10 w-full max-w-sm mx-auto flex flex-col items-center justify-center min-h-screen px-4 space-y-6">
           {/* Subtitle */}
           <div className="w-full text-vela-starlight-white text-center font-body text-subtitle font-normal italic">
@@ -76,11 +70,6 @@ const Welcome: React.FC = () => {
             <span className="text-vela-darker-variant">
               By continuing, you agree to our{" "}
             </span>
-            <span className="text-vela-starlight-white">Terms of Service</span>
-            <span className="text-vela-darker-variant"> and </span>
-            <span className="text-vela-starlight-white">Privacy Policy.</span>
-          </div>
-        </div>
             <span className="text-vela-starlight-white">Terms of Service</span>
             <span className="text-vela-darker-variant"> and </span>
             <span className="text-vela-starlight-white">Privacy Policy.</span>
