@@ -529,7 +529,103 @@ class _RegisterPageState extends State<RegisterPage> {
                                                       });
                                                     },
                                                   ),
-
+                                                  const SizedBox(height: 0),
+                                                  Row(
+                                                    children: [
+                                                      Checkbox(
+                                                        value: _isAgree,
+                                                        onChanged: (val) {
+                                                          setState(() {
+                                                            _isAgree =
+                                                                val ?? false;
+                                                            if (_isAgree)
+                                                              _termsError =
+                                                                  null;
+                                                          });
+                                                        },
+                                                        activeColor:
+                                                            const Color(
+                                                              0xFF3C6EAB,
+                                                            ),
+                                                        checkColor:
+                                                            Colors.white,
+                                                      ),
+                                                      Expanded(
+                                                        child: GestureDetector(
+                                                          onTap: () {
+                                                            setState(() {
+                                                              _isAgree =
+                                                                  !_isAgree;
+                                                              if (_isAgree)
+                                                                _termsError =
+                                                                    null;
+                                                            });
+                                                          },
+                                                          child: RichText(
+                                                            text: TextSpan(
+                                                              text:
+                                                                  'I agree to the ',
+                                                              style: const TextStyle(
+                                                                color: Colors
+                                                                    .white,
+                                                                fontFamily:
+                                                                    'Satoshi',
+                                                                fontSize: 14,
+                                                                fontWeight:
+                                                                    FontWeight
+                                                                        .w400,
+                                                              ),
+                                                              children: [
+                                                                TextSpan(
+                                                                  text:
+                                                                      'Terms of Use',
+                                                                  style: const TextStyle(
+                                                                    color: Colors
+                                                                        .white,
+                                                                    fontFamily:
+                                                                        'Satoshi',
+                                                                    fontSize:
+                                                                        14,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w400,
+                                                                    decoration:
+                                                                        TextDecoration
+                                                                            .underline,
+                                                                  ),
+                                                                  recognizer: TapGestureRecognizer()
+                                                                    ..onTap = () {
+                                                                      // Open Terms of Use URL
+                                                                      launchUrl(
+                                                                        Uri.parse(
+                                                                          'https://myvela.ai/terms-of-use/',
+                                                                        ),
+                                                                      );
+                                                                    },
+                                                                ),
+                                                              ],
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                  if (_termsError != null)
+                                                    Padding(
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                            bottom: 8.0,
+                                                            left: 8.0,
+                                                          ),
+                                                      child: Text(
+                                                        _termsError!,
+                                                        style: TextStyle(
+                                                          color: Colors.red,
+                                                          fontSize: 13,
+                                                          fontFamily: 'Satoshi',
+                                                        ),
+                                                      ),
+                                                    ),
                                                   const SizedBox(height: 10),
                                                   SizedBox(
                                                     height: 60,
